@@ -41,7 +41,7 @@ class UserRoutesPlugin extends AbstractPlugin implements PluginInterface
                 }
             }
             $routePath = '/' . implode('/', $cleanSegments);
-            $controller = isset($route['controller']) ? $route['controller'] : $this->catchallController;
+            $controller = isset($route['controller']) ? $route['controller'] : 'Prontotype\Http\Controllers\DefaultController::catchall';
             $templatePath = isset($route['template']) ? $route['template'] : null;
             $userRoute = $handler->get($routePath, $controller)->name($routeName)->value('templatePath', $templatePath);
             foreach($params as $paramSet) {
