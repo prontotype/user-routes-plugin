@@ -1,4 +1,4 @@
-<?php namespace Prontotype\Plugins\DefaultRoutes;
+<?php namespace Prontotype\Plugins\UserRoutes;
 
 use Prontotype\Container;
 use Prontotype\Plugins\AbstractPlugin;
