@@ -1,0 +1,4 @@
+# routes:
+#   example:
+#     match: '/category/{category}'
+#     template: 'about'

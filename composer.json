@@ -1,0 +1,15 @@
+{
+    "name": "prontotype/user-routes-plugin",
+    "type": "prontotype-plugin",
+    "require": {
+        "prontotype/composer-installer": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Prontotype\\Plugins\\UserRoutes\\": "src/"
+        }
+    },
+    "extra": {
+        "provider": "Prontotype\\Plugins\\UserRoutes\\UserRoutesPlugin"
+    }
+}
