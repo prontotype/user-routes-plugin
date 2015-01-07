@@ -2,7 +2,7 @@
     "name": "prontotype/user-routes-plugin",
     "type": "prontotype-plugin",
     "require": {
-        "prontotype/composer-installer": "dev-master"
+        "prontotype/composer-installer": "~0.1"
     },
     "autoload": {
         "psr-4": {
