@@ -1,7 +1,7 @@
 <?php namespace Prontotype\Plugins\UserRoutes;
 
 use Prontotype\Container;
-use League\Event\Event;
+use Prontotype\Event;
 use Prontotype\Plugins\AbstractPlugin;
 use Prontotype\Plugins\PluginInterface;
 
