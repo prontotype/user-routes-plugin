@@ -15,10 +15,11 @@ class UserRoutesPlugin extends AbstractPlugin implements PluginInterface
     public function register()
     {
         $conf = $this->container->make('prontotype.config');
+        $events = $this->container->make('prontotype.events');
         
+        $events->emit(Event::named('userRoutes.register.start'));
         $this->buildUserRoutes($this->container->make('prontotype.http'), $conf->get('routes') ?: array());
-
-        $this->container->make('prontotype.events')->emit(Event::named('userRoutes.registered'));
+        $events->emit(Event::named('userRoutes.register.end'));
     }
 
     public function buildUserRoutes($handler, $routes)
